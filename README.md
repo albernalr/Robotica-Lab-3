@@ -135,42 +135,17 @@ Antes de comenzar con ROS, es importante familiarizarse con los comandos básico
    - Asegúrate de incluir el script `myTeleopKey.py` en el apartado `catkin_install_python` del archivo `CMakeLists.txt`.
 
 3. **Compilar el paquete**:
-   - Dirígete al directorio del workspace de catkin y ejecuta el siguiente comando:
+   - Dirígirse al directorio del workspace de catkin y ejecuta el siguiente comando:
      ```bash
      catkin_make
      ```
 
 4. **Ejecutar el script**:
-   - Abre tres terminales:
+   - Abrir tres terminales:
      - En la primera terminal, ejecuta `roscore`.
      - En la segunda terminal, ejecuta `rosrun turtlesim turtlesim_node`.
      - En la tercera terminal, ejecuta `rosrun hello_turtle myTeleopKey.py`.
    - Ahora podrás controlar la tortuga con las teclas W, A, S, D, R y ESPACIO.
-
-## Actividades
-
-1. **Resumen de la instalación de ROS2**:
-   - Describe los pasos principales que seguiste para instalar ROS2 en tu sistema operativo (Ubuntu, Robostack, WSL).
-   - Menciona las dificultades que encontraste durante la instalación o el arranque.
-
-2. **Ejercicios iniciales**:
-   - Muestra los ejercicios realizados con scripts de MATLAB y/o Python, incluyendo capturas de pantalla o videos de los resultados.
-   - Utiliza herramientas como `rviz` o `rosbag` para visualizar los datos.
-
-3. **Uso de Dynamixel Wizard**:
-   - Describe los parámetros de motor utilizados, los comandos ejecutados y los resultados obtenidos. Incluye fotos o videos del proceso.
-
-## Observaciones
-
-- **Repositorio en GitHub**: Crea un repositorio en GitHub donde expliques la metodología, los resultados, los análisis y las conclusiones del laboratorio.
-- **Forma de trabajo**: Trabaja en grupos de laboratorio.
-- **Comentarios en el código**: Asegúrate de incluir comentarios en las funciones implementadas y adjunta los archivos `.m` y `.py` en el repositorio.
-
-## Entrega
-
-- **Forma de trabajo**: Grupal de 2 personas. Cada integrante debe proporcionar la URL del repositorio creado.
-- **Entregables**: Crea un repositorio en GitHub con los resultados y análisis del laboratorio.
-- **Fecha de entrega**: Consulta la actividad en Moodle para conocer la fecha límite de entrega.
 
 ## Referencias
 
