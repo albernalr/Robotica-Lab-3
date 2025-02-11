@@ -1,6 +1,6 @@
 # Laboratorio No. 03 - 2024-II - Robótica de Desarrollo, Introducción a ROS
 
-Este repositorio contiene el desarrollo paso a paso del Laboratorio No. 03 de Robótica de Desarrollo, enfocado en la introducción a ROS (Robot Operating System). A continuación, se detallan los requisitos, resultados de aprendizaje, ejercicios y actividades realizadas.
+Este repositorio contiene el desarrollo paso a paso del Laboratorio No. 03 de Robótica de Desarrollo, enfocado en la introducción a ROS (Robot Operating System). A continuación, se detallan los requisitos y resultados de aprendizaje.
 
 ## Requisitos
 
@@ -27,29 +27,27 @@ Antes de comenzar con ROS, es importante familiarizarse con los comandos básico
 - `mkdir`: Crea un nuevo directorio.
 - `rm`: Elimina archivos o directorios.
 - `sudo`: Ejecuta un comando con privilegios de superusuario.
-
-Puedes encontrar más información sobre estos comandos en [The 10 Most Important Linux Commands](http://www.informit.com/blogs/blog.aspx?uk=The-10-Most-Important-Linux-Commands).
-
+- 
 ### b) Conexión de ROS2 con MATLAB
 
 #### Procedimiento:
 
 1. **Iniciar el nodo maestro de ROS**:
-   - Abre una terminal en Linux y ejecuta el siguiente comando:
+   - Abrir una terminal en Linux y ejecuta el siguiente comando:
      ```bash
      roscore
      ```
    - Esto iniciará el nodo maestro de ROS, que es necesario para la comunicación entre nodos.
 
 2. **Ejecutar el nodo de turtlesim**:
-   - En una segunda terminal, ejecuta el siguiente comando:
+   - En una segunda terminal, ejecutar el siguiente comando:
      ```bash
      rosrun turtlesim turtlesim_node
      ```
    - Esto iniciará la simulación de la tortuga en turtlesim.
 
 3. **Conectar MATLAB con ROS**:
-   - Abre MATLAB en Linux (asegúrate de tener el Robotics Toolbox instalado).
+   - Abrir MATLAB en Linux (asegúrate de tener el Robotics Toolbox instalado).
    - Crea un script en MATLAB con el siguiente código para suscribirte al tópico de la pose de la tortuga:
      ```matlab
      % Crear un suscriptor al tópico de la pose de la tortuga
@@ -66,10 +64,10 @@ Puedes encontrar más información sobre estos comandos en [The 10 Most Importan
      ```
 
 4. **Enviar comandos a la tortuga**:
-   - Para modificar la pose de la tortuga, puedes utilizar los servicios de turtlesim. Por ejemplo, para mover la tortuga a una posición específica, puedes usar el servicio `turtle1/teleport_absolute`.
+   - Para modificar la pose de la tortuga, se puede utilizar los servicios de turtlesim. Por ejemplo, para mover la tortuga a una posición específica, se puede usar el servicio `turtle1/teleport_absolute`.
 
 5. **Finalizar el nodo maestro**:
-   - Para finalizar el nodo maestro en MATLAB, puedes usar el siguiente comando:
+   - Para finalizar el nodo maestro en MATLAB, se puede usar el siguiente comando:
      ```matlab
      rosshutdown
      ```
@@ -80,7 +78,7 @@ Puedes encontrar más información sobre estos comandos en [The 10 Most Importan
 
 1. **Crear un script de Python para controlar la tortuga**:
    - En el paquete `hello_turtle` de ROS2, dentro de la carpeta de scripts, crea un archivo llamado `myTeleopKey.py`.
-   - Escribe el siguiente código para controlar la tortuga con el teclado:
+   - Escribir el siguiente código para controlar la tortuga con el teclado:
      ```python
      #!/usr/bin/env python3
 
